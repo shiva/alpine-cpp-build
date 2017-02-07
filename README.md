@@ -6,7 +6,7 @@ Batteries included!
 - build-base
 - cmake
 - lcov
-- cpputest (built from source)
+- cpputest
 
 ## To build the docker image
 

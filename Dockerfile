@@ -16,7 +16,6 @@ RUN apk add --update --no-cache \
  build-base \
  cmake \
  git \
- lcov
-COPY build_install_cpputest.sh /home/root/build_install_cpputest.sh
-ENV GIT_SSL_NO_VERIFY "1"
-RUN /home/root/build_install_cpputest.sh && rm -f /home/root/build_install_cpputest.sh
+ lcov \
+ cpputest
+

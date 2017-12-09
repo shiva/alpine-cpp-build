@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.7
 MAINTAINER Shiva Velmurugan <shiv@shiv.me>
 
 LABEL org.label-schema.vendor="Shiva Velmurugan" \
@@ -11,11 +11,13 @@ LABEL org.label-schema.vendor="Shiva Velmurugan" \
       org.label-schema.vcs-type="git" \
       org.label-schema.vcs-url="https://github.com/shiva/docker-cpp-build"
 
+RUN echo http://nl.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories
+RUN echo http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories
 RUN echo http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories
 RUN apk add --update --no-cache \
  build-base \
  cmake \
  git \
  lcov \
- cpputest
-
+ cpputest \
+ cunit-dev

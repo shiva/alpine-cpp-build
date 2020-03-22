@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.11
 MAINTAINER Shiva Velmurugan <shiv@shiv.me>
 
 LABEL org.label-schema.vendor="Shiva Velmurugan" \

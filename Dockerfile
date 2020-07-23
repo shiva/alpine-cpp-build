@@ -20,4 +20,5 @@ RUN apk add --update --no-cache \
  git \
  lcov \
  cpputest \
- cunit-dev
+ cunit-dev \
+ doxygen
